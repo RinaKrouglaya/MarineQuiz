@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MarineQuiz</string>
+
+    <string name="welcome">Welcome \n to our \n MarineLife \n Quiz. </string>
+
+    <string name="q1">1. A shark\'s skeleton is made out of...</string>
+    <string name="ans1_q1">Bone</string>
+    <string name="ans2_q1">Cartilage</string>
+    <string name="ans3_q1">Minerals</string>
+    <string name="ans4_q1">It has no skeleton</string>
+
+    <string name="q2">2. What kind of an animal is a sea dragon?</string>
+    <string name="ans1_q2"> A marine reptile, related to sea snakes</string>
+    <string name="ans2_q2">A cephalopod, related to squids and octopus</string>
+    <string name="ans3_q2"> A fish, related to seahorses</string>
+    <string name="ans4_q2">It doesn\'t really exist</string>
+
+    <string name="q3"> 3. Select the three species of shark responsible for the most unprovoked attacks on man.</string>
+    <string name="ans1_q3"> Gray Reef</string>
+    <string name="ans2_q3"> Tiger </string>
+    <string name="ans3_q3"> Great White</string>
+    <string name="ans4_q3"> Sand Tiger </string>
+    <string name="ans5_q3"> Sandbar </string>
+    <string name="ans6_q3"> Bull </string>
+    <string name="ans7_q3"> Hammerhead</string>
+
+    <string name="q4"> 4.  Seahorse eggs are:</string>
+    <string name="ans1_q4">  Laid on coral </string>
+    <string name="ans2_q4">  Carried by \n the female  </string>
+    <string name="ans3_q4">  Carried by \n the male until \n they hatch</string>
+
+    <string name="q5"> 5. Which ocean basin has the most coral reefs? </string>
+    <string name="q5AnswerHint"> Please type your answer here</string>
+
+    <string name="q6"> 6. Sea turtles drink a lot of seawater. How does it get rid of the excess salt in its body?</string>
+    <string name="ans1_q6">  By crying</string>
+    <string name="ans2_q6">  By sneezing </string>
+    <string name="ans3_q6">  By vomiting</string>
+    <string name="ans4_q6">  By going on a low-salt diet </string>
+
+    <string name="submitButton">  Submit Your Answers </string>
+    <string name="noFifthAnswer">  Please answer the question number 5 </string>
+
+    <string name="yourScoreIs"> Your score is \  </string>
+    <string name="score_zero"> !\ Were you even trying? </string>
+    <string name="score_low"> \! Try again? </string>
+    <string name="score_notBad">! \ Not bad, but you can do better! </string>
+    <string name="score_six"> !\ Excellent! </string>
+    <string name="outOf6"> \ out of 6 </string>
+</resources>

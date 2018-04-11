@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgland"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeftLandscape"
+        android:padding="@dimen/overallPadding">
+
+        <TextView
+            android:id="@+id/welcome"
+            style="@style/welcomeTextStyle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/welcome" />
+
+        <ImageView
+            android:id="@+id/fish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fish" />
+
+        <TextView
+            android:id="@+id/q1"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/fish"
+            android:text="@string/q1" />
+
+        <ImageView
+            android:id="@+id/shark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q1"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shark" />
+
+
+        <RadioGroup
+            android:id="@+id/group_q1"
+            style="@style/radiogroupStyle"
+            android:layout_below="@id/q1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionA_q1"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans1_q1"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionB_q1"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans2_q1"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionC_q1"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans3_q1"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionD_q1"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans4_q1"
+                app:buttonTint="@color/radioButtonColor" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/group_q1"
+            android:text="@string/q2"
+            />
+
+        <RadioGroup
+            android:id="@+id/group_q2"
+            style="@style/radiogroupStyle"
+            android:layout_below="@id/q2"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionA_q2"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans1_q2"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionB_q2"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans2_q2"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionC_q2"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans3_q2"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionD_q2"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans4_q2"
+                app:buttonTint="@color/radioButtonColor" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/seaDragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/q3"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/seadragonland" />
+
+        <TextView
+            android:id="@+id/q3"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/group_q2"
+            android:text="@string/q3" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox1_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/q3"
+            android:text="@string/ans1_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox2_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/checkbox1_q3"
+            android:text="@string/ans2_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <ImageView
+            android:id="@+id/tigershark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox1_q3"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tigershark" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox3_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/checkbox2_q3"
+            android:text="@string/ans3_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox4_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/checkbox3_q3"
+            android:text="@string/ans4_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox5_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/checkbox4_q3"
+            android:text="@string/ans5_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox6_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/checkbox5_q3"
+            android:text="@string/ans6_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox7_q3"
+            style="@style/checklistTextStyle"
+            android:layout_below="@id/checkbox6_q3"
+            android:text="@string/ans7_q3"
+            app:buttonTint="@color/checkBoxColor" />
+
+        <TextView
+            android:id="@+id/q4"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/tigershark"
+            android:text="@string/q4"
+            />
+
+        <ImageView
+            android:id="@+id/seahorse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q4"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/seahorse" />
+
+        <RadioGroup
+            android:id="@+id/group_q4"
+            style="@style/radiogroupStyle"
+            android:layout_below="@id/q4"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionA_q4"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans1_q4"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionB_q4"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans2_q4"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionC_q4"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans3_q4"
+                app:buttonTint="@color/radioButtonColor" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/q5"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/seahorse"
+            android:text="@string/q5"
+            />
+
+        <EditText
+            android:id="@+id/q5_answer"
+            style="@style/answer_q5_style"
+            android:layout_below="@id/q5"
+            android:hint="@string/q5AnswerHint"
+            android:imeOptions="flagNoExtractUi" />
+
+        <ImageView
+            android:id="@+id/coral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q5_answer"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coral" />
+
+        <TextView
+            android:id="@+id/q6"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/coral"
+            android:text="@string/q6"
+            />
+
+        <ImageView
+            android:id="@+id/turtle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTop"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/turtle" />
+
+        <RadioGroup
+            android:id="@+id/group_q6"
+            style="@style/radiogroupStyle"
+            android:layout_below="@id/q6"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionA_q6"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans1_q6"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionB_q6"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans2_q6"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionC_q6"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans3_q6"
+                app:buttonTint="@color/radioButtonColor" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/optionD_q6"
+                style="@style/radiobuttonStyle"
+                android:text="@string/ans4_q6"
+                app:buttonTint="@color/radioButtonColor" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/result_message"
+            style="@style/questionTextStyle"
+            android:layout_below="@id/group_q6"
+            android:text="" />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/submitButtonsStyle"
+            android:layout_below="@+id/result_message"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_button_selector"
+            android:onClick="submitAnswers"
+            android:text="@string/submitButton" />
+
+        <ImageView
+            android:id="@+id/dolphin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit_button"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dolphin" />
+
+    </RelativeLayout>
+</ScrollView>

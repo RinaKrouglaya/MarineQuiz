@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcomeTextSize">30sp</dimen>
+    <dimen name="titleTextSize">35sp</dimen>
+    <dimen name="questionTextSize">25sp</dimen>
+    <dimen name="radioButtonTextSize">23sp</dimen>
+    <dimen name="answerTextSize">23sp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
+
+    <dimen name="smallTextMargin_horizontal">10dp</dimen>
+    <dimen name="innerMargin">10dp</dimen>
+    <dimen name="marginTop">25dp</dimen>
+    <dimen name="checkMarginTop">15dp</dimen>
+    <dimen name="marginRight">20dp</dimen>
+    <dimen name="marginLeftLandscape">15dp</dimen>
+    <dimen name="overallPadding">5dp</dimen>
+
+    <dimen name="shadow_dimension">5.0</dimen>
+    <dimen name="shadow_radius">1.0</dimen>
+
+
+</resources>
