@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,21 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
         int points = 0;
 
-//Question 1
+        //Question 1
         RadioButton radioButton_q1 = findViewById (R.id.optionB_q1);
         boolean firstQuestionCorrect = radioButton_q1.isChecked ();
         if (firstQuestionCorrect) {
             points += 1;
         }
-//Question 2
+        //Question 2
         RadioButton radioButton_q2 = findViewById (R.id.optionC_q2);
         boolean secondQuestionCorrect = radioButton_q2.isChecked ();
         if (secondQuestionCorrect) {
             points += 1;
         }
 
-//Question 3 - in order to get a point in Question 3,  three particular boxes has to be checked
-
+        //Question 3 - in order to get a point in Question 3,  three particular boxes has to be checked
         CheckBox checkAns1_q3 = findViewById (R.id.checkbox1_q3);
         boolean thirdQuestionAnswer1 = checkAns1_q3.isChecked ();
         CheckBox checkAns2_q3 = findViewById (R.id.checkbox2_q3);
@@ -59,15 +57,14 @@ public class MainActivity extends AppCompatActivity {
             points = points + 1;
         }
 
-//Question 4
+        //Question 4
         RadioButton radioButton_q4 = findViewById (R.id.optionC_q4);
         boolean forthQuestionCorrect = radioButton_q4.isChecked ();
         if (forthQuestionCorrect) {
             points += 1;
         }
 
-//Question 5
-
+        //Question 5
         EditText fifthAnswer = findViewById (R.id.q5_answer);
         String fifthAnswerText = fifthAnswer.getText ().toString ();
         if (fifthAnswerText.equals ("")) {
@@ -84,10 +81,8 @@ public class MainActivity extends AppCompatActivity {
             points += 1;
         }
 
-//Showing the result to the user
+        //Showing the result to the user
         displayScore (points);
-
-
     }
 
     /**
@@ -95,9 +90,8 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score User's result
      */
-
     private void displayScore(int score) {
-        TextView messageTextView = findViewById (R.id.result_message);
+
         String strScore = String.valueOf (score);
         String message = getString (R.string.yourScoreIs) + strScore + getString (R.string.outOf6);
 
@@ -109,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (score == 6) message += getString (R.string.score_six);
 
-        messageTextView.setText (message);
+        Toast.makeText (getApplicationContext (), message, Toast.LENGTH_LONG).show ();
 
     }
 

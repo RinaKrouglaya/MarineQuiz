@@ -79,8 +79,7 @@
             android:id="@+id/q2"
             style="@style/questionTextStyle"
             android:layout_below="@id/group_q1"
-            android:text="@string/q2"
-            />
+            android:text="@string/q2" />
 
         <RadioGroup
             android:id="@+id/group_q2"
@@ -193,8 +192,7 @@
             android:id="@+id/q4"
             style="@style/questionTextStyle"
             android:layout_below="@id/tigershark"
-            android:text="@string/q4"
-            />
+            android:text="@string/q4" />
 
         <ImageView
             android:id="@+id/seahorse"
@@ -236,8 +234,7 @@
             android:id="@+id/q5"
             style="@style/questionTextStyle"
             android:layout_below="@id/seahorse"
-            android:text="@string/q5"
-            />
+            android:text="@string/q5" />
 
         <EditText
             android:id="@+id/q5_answer"
@@ -260,8 +257,7 @@
             android:id="@+id/q6"
             style="@style/questionTextStyle"
             android:layout_below="@id/coral"
-            android:text="@string/q6"
-            />
+            android:text="@string/q6" />
 
         <ImageView
             android:id="@+id/turtle"
@@ -305,16 +301,11 @@
                 app:buttonTint="@color/radioButtonColor" />
         </RadioGroup>
 
-        <TextView
-            android:id="@+id/result_message"
-            style="@style/questionTextStyle"
-            android:layout_below="@id/group_q6"
-            android:text="" />
 
         <Button
             android:id="@+id/submit_button"
             style="@style/submitButtonsStyle"
-            android:layout_below="@+id/result_message"
+            android:layout_below="@id/group_q6"
             android:layout_centerHorizontal="true"
             android:background="@drawable/my_button_selector"
             android:onClick="submitAnswers"
