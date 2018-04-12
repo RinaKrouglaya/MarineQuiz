@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         if (fifthAnswerText.equals ("")) {
             Toast.makeText (getApplicationContext (), getString (R.string.noFifthAnswer), Toast.LENGTH_LONG).show ();
             return;
-        } else if ((fifthAnswerText.equals ("Pacific")) || ((fifthAnswerText.equals ("Pacific Ocean")))) {
+        } else if ((fifthAnswerText.equalsIgnoreCase (getString (R.string.pacific))) || (fifthAnswerText.equalsIgnoreCase (getString (R.string.pacificOcean)))) {
             points += 1;
         }
 

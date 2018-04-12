@@ -47,4 +47,7 @@
     <string name="score_notBad">! \ Not bad, but you can do better! </string>
     <string name="score_six"> !\ Excellent! </string>
     <string name="outOf6"> \ out of 6 </string>
+
+    <string name="pacific">Pacific </string>
+    <string name="pacificOcean">Pacific Ocean</string>
 </resources>
